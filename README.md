@@ -1,5 +1,3 @@
-# githooks
-
 #### Init git hooks
 
 ```
