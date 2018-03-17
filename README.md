@@ -1,5 +1,3 @@
-#### Init git hooks
-
 ```
-$ git config core.hooksPath hooks
+$ git config core.hooksPath hooks    # Init git hooks by path [./hooks]
 ```
