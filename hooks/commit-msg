@@ -1,0 +1,10 @@
+#!/bin/sh
+
+MSG="$1"
+
+COMMIT_LENGTH=`cat $MSG | grep -E '^(issue-[0-9]|ISSUE-[0-9]+|Merge|merge|Revert|revert)' | wc -c`
+if [ ${COMMIT_LENGTH} -eq 0 ] ; then
+    cat "$MSG"
+    echo "Your commit message must starts with the next words 'ISSUE-[digits]|issue-[digits]|Merge|merge|Revert|revert'"
+    exit 1
+fi

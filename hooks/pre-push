@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# Pre-push hooks
+
+# Check branch name
+BRANCH_NAME_LENGTH=`git rev-parse --abbrev-ref HEAD | grep -E '^(develop|dev|development)|^(feature|bugfix)\/(issue|ISSUE)-[0-9]+' | wc -c`
+
+if [ ${BRANCH_NAME_LENGTH} -eq 0 ] ; then
+  echo "Branch name should be allowed by pattern ''^(develop|dev|development)|^(feature|bugfix)\/(issue|ISSUE)-[0-9]+' ."
+  exit 1
+fi
