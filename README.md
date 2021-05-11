@@ -12,3 +12,11 @@ $ git config core.hooksPath hooks    # Init git hooks by path [./hooks]
     "preinstall": "git config core.hooksPath hooks"
   }
 ```
+
+
+```
+add submodules
+git submodule add https://git@dev.azure.com/sss/_git/Common submodules/Common
+pull submodules
+git submodule update --recursive --remote
+```
