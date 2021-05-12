@@ -24,5 +24,13 @@ update .gitmodules, add at the end
 	url = https://git@dev.azure.com/sss/_git/Common
 	branch = feature/test
 pull submodules
+git submodule update --init
 git submodule update --recursive --remote
+```
+
+
+#### Other
+```
+sync all submodules
+git submodule foreach --recursive 'git submodule sync'
 ```
