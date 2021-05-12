@@ -22,7 +22,7 @@ update .gitmodules, add at the end
 [submodule "submodules/Common"]
 	path = submodules/Common
 	url = https://git@dev.azure.com/sss/_git/Common
-	branch = feature/4516_book-appointment
+	branch = feature/test
 pull submodules
 git submodule update --recursive --remote
 ```
