@@ -27,7 +27,10 @@ pull submodules
 git submodule update --init
 git submodule update --recursive --remote
 ```
-
+### Change file ending
+```
+git add --renormalize
+```
 
 #### Other
 ```
