@@ -32,6 +32,11 @@ git submodule update --recursive --remote
 git add --renormalize
 ```
 
+### Git remove submodule
+```
+git rm <path-to-submodule>
+```
+
 #### Other
 ```
 sync all submodules
