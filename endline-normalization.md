@@ -12,6 +12,11 @@ core.autocrlf=true:      core.autocrlf=input:     core.autocrlf=false:
 crlf->lf    lf->crlf     crlf->lf       \             /          \
    /            \           /            \           /            \
 ```
+
+Set autocrlf
+```
+git config --global core.autocrlf false
+```
  
 #### Add  Line Endings configuration file
  ```
